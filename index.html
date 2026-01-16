@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>19853 Collins Rd Research - For Julia</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         .timeline-item::before {
             content: '';
@@ -22,6 +21,7 @@
         .timeline-item.green::before { background: #22c55e; }
         .timeline-item.yellow::before { background: #eab308; }
         .timeline-item.purple::before { background: #a855f7; }
+        .timeline-item.orange::before { background: #f97316; }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100 min-h-screen">
@@ -37,58 +37,218 @@
         <section class="bg-gray-800 rounded-lg p-6 mb-8 border-l-4 border-yellow-500">
             <h2 class="text-xl font-semibold text-yellow-400 mb-4">Quick Summary</h2>
             <ul class="space-y-2 text-gray-300">
-                <li><span class="text-red-400 font-bold">Red Flag:</span> Previous owners (Byron & Tasha Dechellis) lived in North Carolina since 2014 but claimed CA Homeowner's Exemption</li>
-                <li><span class="text-yellow-400 font-bold">Concern:</span> House was investment property managed from 2,500 miles away for 8 years</li>
-                <li><span class="text-yellow-400 font-bold">Concern:</span> Current seller (Nick Manfredi) is a professional house flipper who bought for $553k, selling for $760k</li>
-                <li><span class="text-blue-400 font-bold">Unknown:</span> Who actually lived in the house 2017-2025?</li>
+                <li><span class="text-red-400 font-bold">Confirmed Fraud:</span> Previous owners (Byron & Tasha Dechellis) claimed CA Homeowner's Exemption while living in NC since 2014</li>
+                <li><span class="text-yellow-400 font-bold">Concern:</span> House was investment property managed from 2,500 miles away for 8 years - likely rental with deferred maintenance</li>
+                <li><span class="text-yellow-400 font-bold">Concern:</span> Professional flipper (Nick Manfredi) bought for $553k, selling for $760k after ~33 days of cosmetic work</li>
+                <li><span class="text-blue-400 font-bold">Unknown:</span> Who actually lived in the house 2017-2025? Tenants? Family? Vacant?</li>
+                <li><span class="text-purple-400 font-bold">Suspicious:</span> Tasha's mother died just 3 months after they bought the house - was it intended for her?</li>
             </ul>
+        </section>
+
+        <!-- Our Best Theory -->
+        <section class="bg-blue-900/30 border border-blue-500 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">What We Think Happened</h2>
+
+            <div class="space-y-4 text-sm">
+                <div class="bg-gray-800/50 rounded p-4">
+                    <h3 class="font-semibold text-blue-300 mb-2">Phase 1: The Purchase (May 2017)</h3>
+                    <p>Byron & Tasha were already living in North Carolina (voter registration April 2014). Byron was leaving Wells Fargo LA and starting a new job at Oxbird in NC. They bought this CA house for <strong>$475,000</strong> - possibly as an investment property, or possibly for Tasha's mother to live in (she was 75, living in Nevada City with her 91-year-old husband).</p>
+                </div>
+
+                <div class="bg-gray-800/50 rounded p-4">
+                    <h3 class="font-semibold text-red-300 mb-2">Phase 2: The Tragedy (August 2017)</h3>
+                    <p>Just <strong>3 months after purchase</strong>, Tasha's mother Tiana Trumbo died unexpectedly while hiking. She was 75. If the house was intended for her, those plans died with her. The family was now stuck with an investment property 2,500 miles away.</p>
+                </div>
+
+                <div class="bg-gray-800/50 rounded p-4">
+                    <h3 class="font-semibold text-yellow-300 mb-2">Phase 3: The Long Wait (2017-2025)</h3>
+                    <p>For 8 years, the Dechellis family held this property from North Carolina. Someone was living here (tenants? family members?) but we don't know who. They claimed the <strong>Homeowner's Exemption</strong> on property taxes - which requires it to be your primary residence. This is fraud.</p>
+                    <p class="mt-2">Byron is a licensed mortgage professional (NMLS# 448214, FINRA Series 6/63) who worked at Wells Fargo for 11+ years. He <strong>knows</strong> the rules about owner-occupancy. The exemption only saves ~$70/year - why risk his career for that?</p>
+                </div>
+
+                <div class="bg-gray-800/50 rounded p-4">
+                    <h3 class="font-semibold text-purple-300 mb-2">Phase 4: Liquidation (2024-2025)</h3>
+                    <p><strong>May 2024:</strong> Byron sold his NC lake house (4461 1st St NW) for <strong>$1,350,000</strong> - he called it "my favorite lake house" on LinkedIn. They were simplifying their life.</p>
+                    <p class="mt-2"><strong>September 2024:</strong> Byron started a new job at First Citizens Bank as Branch Manager.</p>
+                    <p class="mt-2"><strong>Late 2025:</strong> They sold the CA house to Nick Manfredi's "We Buy Houses" company for <strong>$553,000</strong> - about $150k+ below market value. Why take such a low price? They had just made $1.35M on the lake house. The CA property was a hassle they wanted off their books.</p>
+                </div>
+
+                <div class="bg-gray-800/50 rounded p-4">
+                    <h3 class="font-semibold text-orange-300 mb-2">Phase 5: The Flip (Dec 2025 - Jan 2026)</h3>
+                    <p>Nick Manfredi (professional flipper since 1998) bought for $553k, did ~33 days of cosmetic work (paint, flooring, lighting, baseboards), and listed for $755k. No permits were pulled. Julia's offer of <strong>$760,000</strong> was accepted.</p>
+                    <p class="mt-2 text-orange-400"><strong>Flipper profit:</strong> ~$150,000-$175,000 in about 4 months</p>
+                </div>
+            </div>
         </section>
 
         <!-- Timeline Visualization -->
         <section class="bg-gray-800 rounded-lg p-6 mb-8">
-            <h2 class="text-xl font-semibold text-blue-400 mb-6">Property Timeline</h2>
+            <h2 class="text-xl font-semibold text-blue-400 mb-6">Complete Property Timeline</h2>
             <div class="relative border-l-2 border-gray-600 ml-4 pl-8 space-y-6">
+                <div class="timeline-item relative">
+                    <div class="text-sm text-gray-400">April 2014</div>
+                    <div class="font-semibold">Byron & Tasha register to vote in Hickory, NC</div>
+                    <div class="text-sm text-gray-400">They were already NC residents 3 years before buying this house</div>
+                </div>
                 <div class="timeline-item relative green">
                     <div class="text-sm text-gray-400">May 11, 2017</div>
-                    <div class="font-semibold">Byron & Tasha Dechellis buy for $475,000</div>
-                    <div class="text-sm text-gray-400">Already NC residents since 2014</div>
+                    <div class="font-semibold">Byron & Tasha buy 19853 Collins Rd for $475,000</div>
+                    <div class="text-sm text-gray-400">Same month Byron left Wells Fargo LA and started NC job at Oxbird</div>
                 </div>
                 <div class="timeline-item relative red">
                     <div class="text-sm text-gray-400">August 26, 2017</div>
                     <div class="font-semibold text-red-400">Tasha's mother (Tiana Trumbo) dies unexpectedly</div>
-                    <div class="text-sm text-gray-400">Just 3 months after house purchase - in Nevada City, CA</div>
+                    <div class="text-sm text-gray-400">Age 75, died while hiking in Nevada City - just 3 months after house purchase</div>
                 </div>
                 <div class="timeline-item relative yellow">
                     <div class="text-sm text-gray-400">2017-2025</div>
                     <div class="font-semibold">8 years of absentee ownership</div>
-                    <div class="text-sm text-gray-400">Unknown who was living here - tenants? family? vacant?</div>
+                    <div class="text-sm text-gray-400">Claimed Homeowner's Exemption (fraud) - unknown who was living here</div>
+                </div>
+                <div class="timeline-item relative">
+                    <div class="text-sm text-gray-400">September 2021</div>
+                    <div class="font-semibold">Byron & Tasha buy 4657 Queens Rd, Hickory NC for $188,000</div>
+                    <div class="text-sm text-gray-400">They owned multiple properties in NC while holding CA investment</div>
                 </div>
                 <div class="timeline-item relative purple">
                     <div class="text-sm text-gray-400">May 29, 2024</div>
                     <div class="font-semibold">Byron sells NC lake house for $1,350,000</div>
-                    <div class="text-sm text-gray-400">Called it "my favorite lake house" on LinkedIn</div>
+                    <div class="text-sm text-gray-400">Called it "my favorite lake house" on LinkedIn - $150k over asking price</div>
                 </div>
                 <div class="timeline-item relative">
-                    <div class="text-sm text-gray-400">Sept-Dec 2025</div>
-                    <div class="font-semibold">Sold to Nick Manfredi for $553,000</div>
-                    <div class="text-sm text-gray-400">$150k+ below market value - "We Buy Houses" quick sale</div>
+                    <div class="text-sm text-gray-400">September 2024</div>
+                    <div class="font-semibold">Byron starts new job at First Citizens Bank</div>
+                    <div class="text-sm text-gray-400">Branch Manager (AVP) in Hudson, NC - career transition</div>
+                </div>
+                <div class="timeline-item relative orange">
+                    <div class="text-sm text-gray-400">September 11, 2025</div>
+                    <div class="font-semibold">Contract signed with Manfredi (per Compass)</div>
+                    <div class="text-sm text-gray-400">Possible wholesale contract or assignment date</div>
+                </div>
+                <div class="timeline-item relative orange">
+                    <div class="text-sm text-gray-400">December 5, 2025</div>
+                    <div class="font-semibold">Sale closes - Manfredi buys for $553,000</div>
+                    <div class="text-sm text-gray-400">$150k+ below market - absentee owners took quick cash offer</div>
                 </div>
                 <div class="timeline-item relative yellow">
                     <div class="text-sm text-gray-400">Dec 5, 2025 - Jan 7, 2026</div>
-                    <div class="font-semibold">~33 days of renovation</div>
+                    <div class="font-semibold">~33 days of cosmetic renovation</div>
                     <div class="text-sm text-gray-400">Paint, flooring, lighting, baseboards - NO permits pulled</div>
+                </div>
+                <div class="timeline-item relative">
+                    <div class="text-sm text-gray-400">January 7, 2026</div>
+                    <div class="font-semibold">Listed for $755,000</div>
+                    <div class="text-sm text-gray-400">$202k markup from purchase price</div>
                 </div>
                 <div class="timeline-item relative green">
                     <div class="text-sm text-gray-400">January 2026</div>
                     <div class="font-semibold">Julia's offer of $760,000 accepted</div>
-                    <div class="text-sm text-gray-400">Flipper profit: ~$150-200k in 4 months</div>
+                    <div class="text-sm text-gray-400">Flipper profit: ~$150-175k in 4 months</div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Current Seller - Nick Manfredi -->
+        <section class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">Current Seller: Nick Manfredi (Professional House Flipper)</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Contact & Licenses</h3>
+                    <table class="w-full text-sm">
+                        <tr><td class="text-gray-400 py-1">Full Name:</td><td>Nicholas Manfredi</td></tr>
+                        <tr><td class="text-gray-400 py-1">DRE License:</td><td><a href="https://pplinfo2.dre.ca.gov/PPLInfo/PplInfoStart?LicenseID=01893754" class="text-blue-400 hover:underline" target="_blank">#01893754</a></td></tr>
+                        <tr><td class="text-gray-400 py-1">Brokerage:</td><td>Elevate Real Estate Agency</td></tr>
+                        <tr><td class="text-gray-400 py-1">Phone:</td><td class="text-blue-400">(949) 424-7701</td></tr>
+                        <tr><td class="text-gray-400 py-1">Email:</td><td>kaleb@nickmanfredi.com</td></tr>
+                        <tr><td class="text-gray-400 py-1">Location:</td><td>Corona, CA</td></tr>
+                        <tr><td class="text-gray-400 py-1">LinkedIn:</td><td><a href="https://www.linkedin.com/in/nick-manfredi-95bb575/" class="text-blue-400 hover:underline" target="_blank">View Profile</a></td></tr>
+                    </table>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-3">Business Background</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><strong class="text-yellow-400">26-year veteran</strong> real estate investor (since 1998)</li>
+                        <li>CEO of <a href="https://www.themanfredigroup.com/" class="text-blue-400 hover:underline" target="_blank">The Manfredi Group</a></li>
+                        <li>CEO of <a href="https://as-is-housebuyers.com/" class="text-blue-400 hover:underline" target="_blank">As-Is House Buyers</a></li>
+                        <li>Featured in: Fortune Magazine, LA Times, CNN Money</li>
+                        <li>Predicted 2007 housing crash and market bottom</li>
+                        <li>Cal State Fullerton graduate</li>
+                        <li>Lives in Corona, CA with wife Susan and 3 sons</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-6 bg-gray-700 rounded-lg p-4">
+                <h3 class="font-semibold text-lg mb-3">His Team (As-Is House Buyers)</h3>
+                <div class="grid md:grid-cols-4 gap-4 text-sm">
+                    <div class="bg-gray-800 rounded p-3">
+                        <div class="font-semibold">Nick Manfredi</div>
+                        <div class="text-gray-400">CEO</div>
+                    </div>
+                    <div class="bg-gray-800 rounded p-3">
+                        <div class="font-semibold">Kaleb Weiss</div>
+                        <div class="text-gray-400">Acquisitions Manager</div>
+                    </div>
+                    <div class="bg-gray-800 rounded p-3">
+                        <div class="font-semibold">Robin Lopez Tiana</div>
+                        <div class="text-gray-400">Administrative Director</div>
+                    </div>
+                    <div class="bg-gray-800 rounded p-3">
+                        <div class="font-semibold">Cesar Sandoval</div>
+                        <div class="text-gray-400">Construction Project Manager</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 grid md:grid-cols-2 gap-6">
+                <div class="bg-yellow-900/20 rounded p-4">
+                    <h4 class="font-semibold text-yellow-400 mb-2">The Flip Math</h4>
+                    <table class="w-full text-sm">
+                        <tr><td class="text-gray-400">Bought for:</td><td>$553,000</td></tr>
+                        <tr><td class="text-gray-400">Closing costs (buy):</td><td>~$5,000</td></tr>
+                        <tr><td class="text-gray-400">Renovation (est):</td><td>$30,000 - $50,000</td></tr>
+                        <tr><td class="text-gray-400">Hard money interest:</td><td>~$5,000/mo</td></tr>
+                        <tr><td class="text-gray-400">Closing costs (sell):</td><td>~$6,000</td></tr>
+                        <tr class="border-t border-gray-600">
+                            <td class="pt-2 text-gray-400">Total investment:</td>
+                            <td class="pt-2">~$600,000 - $620,000</td>
+                        </tr>
+                        <tr><td class="text-gray-400">Selling for:</td><td>$760,000</td></tr>
+                        <tr class="border-t border-gray-600">
+                            <td class="pt-2 text-green-400 font-bold">Gross Profit:</td>
+                            <td class="pt-2 text-green-400 font-bold">$140,000 - $160,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bg-red-900/20 rounded p-4">
+                    <h4 class="font-semibold text-red-400 mb-2">Red Flags</h4>
+                    <ul class="text-sm space-y-2">
+                        <li>Listing agent is likely the <strong>owner</strong></li>
+                        <li>Professional flipper, not traditional seller</li>
+                        <li>Acquired property <strong>$150k+ below market</strong></li>
+                        <li>Only <strong>33 days of renovation</strong> - rushed</li>
+                        <li><strong>NO permits</strong> found in LA County or Santa Clarita</li>
+                        <li>All work appears cosmetic - what's underneath?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-4 p-4 bg-blue-900/20 rounded">
+                <h4 class="font-semibold text-blue-400 mb-2">AB-968 Flipper Disclosure Law (California)</h4>
+                <p class="text-sm">Under <a href="https://tldlaw.com/disclosure-requirements-for-residential-flippers-understanding-ab-968/" class="text-blue-400 hover:underline" target="_blank">California Civil Code 1102.6h</a> (effective July 1, 2024), sellers who sell within 18 months of purchase <strong>MUST</strong> disclose:</p>
+                <ul class="text-sm list-disc ml-6 mt-2">
+                    <li>Complete list of all work performed (additions, modifications, repairs)</li>
+                    <li><strong>Names and contact info</strong> for ALL contractors (work over $500)</li>
+                    <li>Copies of ALL permits obtained</li>
+                </ul>
+                <p class="text-sm mt-2 text-yellow-400"><strong>Request these disclosures!</strong> If they can't provide them, you may have grounds for rescission.</p>
             </div>
         </section>
 
         <!-- Previous Owners Section -->
         <section class="bg-gray-800 rounded-lg p-6 mb-8">
-            <h2 class="text-xl font-semibold text-blue-400 mb-4">Previous Owners: Byron & Tasha Dechellis</h2>
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">Previous Owners: Byron & Tasha Dechellis (2017-2025)</h2>
 
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- Byron -->
@@ -100,17 +260,18 @@
                         <tr><td class="text-gray-400 py-1">LinkedIn:</td><td><a href="https://www.linkedin.com/in/byron-dechellis-55789873" class="text-blue-400 hover:underline" target="_blank">View Profile</a></td></tr>
                         <tr><td class="text-gray-400 py-1">Current Job:</td><td>First Citizens Bank (Branch Manager, AVP)</td></tr>
                         <tr><td class="text-gray-400 py-1">Location:</td><td>Hudson, North Carolina</td></tr>
-                        <tr><td class="text-gray-400 py-1">NC Voter Reg:</td><td>April 14, 2014</td></tr>
+                        <tr><td class="text-gray-400 py-1">NC Voter Reg:</td><td class="text-yellow-400">April 14, 2014</td></tr>
                     </table>
 
                     <h4 class="font-semibold mt-4 mb-2 text-yellow-400">Professional Licenses</h4>
                     <ul class="text-sm space-y-1">
-                        <li>NMLS# 448214 (Mortgage Loan Originator)</li>
+                        <li><strong>NMLS# 448214</strong> - Mortgage Loan Originator</li>
                         <li>FINRA Series 6 (Feb 2025)</li>
                         <li>FINRA Series 63 (Feb 2025)</li>
                         <li>FINRA SIE (Jan 2025)</li>
                         <li>NC Life Insurance License (Mar 2025)</li>
                     </ul>
+                    <p class="text-xs text-red-400 mt-2">This man is a licensed mortgage professional who KNOWS owner-occupancy rules.</p>
                 </div>
 
                 <!-- Tasha -->
@@ -121,15 +282,15 @@
                         <tr><td class="text-gray-400 py-1">Maiden Name:</td><td>Trumbo</td></tr>
                         <tr><td class="text-gray-400 py-1">Phone:</td><td class="text-blue-400">(661) 670-9404</td></tr>
                         <tr><td class="text-gray-400 py-1">Location:</td><td>Hickory, North Carolina</td></tr>
-                        <tr><td class="text-gray-400 py-1">NC Voter Reg:</td><td>April 23, 2014</td></tr>
+                        <tr><td class="text-gray-400 py-1">NC Voter Reg:</td><td class="text-yellow-400">April 23, 2014</td></tr>
                     </table>
 
                     <h4 class="font-semibold mt-4 mb-2">Family (Trumbo)</h4>
                     <ul class="text-sm space-y-1">
                         <li><strong>Father:</strong> William "Bill" Trumbo (~100 yrs old)</li>
-                        <li class="text-gray-400 ml-4">Nevada City, CA - Mr. San Fernando Valley 1947</li>
-                        <li><strong class="text-red-400">Mother:</strong> Tiana Trumbo (DIED Aug 26, 2017)</li>
-                        <li class="text-gray-400 ml-4">Died 3 months after house purchase</li>
+                        <li class="text-gray-400 ml-4">Nevada City, CA - <a href="https://www.theunion.com/news/local-news/a-life-of-accomplishments-nevada-city-s-bill-trumbo-looks-back-at-his-life/" class="text-blue-400 hover:underline" target="_blank">Mr. San Fernando Valley 1947, Lockheed-Martin veteran</a></li>
+                        <li><strong class="text-red-400">Mother:</strong> Tiana Trumbo - <a href="https://www.theunion.com/news/obituaries/obituary-of-tiana-jacqueline-trumbo/" class="text-blue-400 hover:underline" target="_blank">DIED Aug 26, 2017</a></li>
+                        <li class="text-gray-400 ml-4">Died 3 months after house purchase while hiking</li>
                         <li><strong>Sisters:</strong> Tammy Baehr, Tiffany Trumbo</li>
                     </ul>
                 </div>
@@ -149,8 +310,13 @@
                         </thead>
                         <tbody>
                             <tr class="border-b border-gray-600">
+                                <td class="py-2">2008-2009</td>
+                                <td>Sermons at Grace Community Church</td>
+                                <td>Sun Valley, CA</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
                                 <td class="py-2">2010 - Jun 2017</td>
-                                <td>Wells Fargo Mortgage Sales Supervisor</td>
+                                <td>Wells Fargo Mortgage Sales Supervisor (NMLS# 448214)</td>
                                 <td>LA County, CA</td>
                             </tr>
                             <tr class="border-b border-gray-600 bg-yellow-900/20">
@@ -165,13 +331,32 @@
                             </tr>
                             <tr>
                                 <td class="py-2">Sep 2024 - Present</td>
-                                <td>First Citizens Bank (Branch Manager)</td>
+                                <td>First Citizens Bank (Branch Manager, AVP)</td>
                                 <td>Hudson, NC</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p class="text-yellow-400 text-sm mt-3">Note: He started working in NC in May 2017 - the SAME month he bought the CA house.</p>
+                <p class="text-yellow-400 text-sm mt-3"><strong>Key Finding:</strong> He registered to vote in NC in April 2014, but his LinkedIn shows LA job until June 2017. He started NC job in May 2017 - the SAME month he bought this CA house.</p>
+            </div>
+
+            <!-- NC Properties -->
+            <div class="mt-6 bg-gray-700 rounded-lg p-4">
+                <h3 class="font-semibold text-lg mb-3">Their NC Properties (Verified via Catawba County Records)</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-gray-800 rounded p-3">
+                        <div class="font-semibold text-purple-400">Lake House (SOLD)</div>
+                        <div>4461 1st St NW, Hickory NC</div>
+                        <div class="text-gray-400">Sold May 29, 2024 for <strong class="text-green-400">$1,350,000</strong></div>
+                        <div class="text-gray-400">Byron called it "my favorite lake house"</div>
+                    </div>
+                    <div class="bg-gray-800 rounded p-3">
+                        <div class="font-semibold text-blue-400">Current Property</div>
+                        <div>4657 Queens Rd, Hickory NC</div>
+                        <div class="text-gray-400">Bought Sep 2021 for $188,000</div>
+                        <div class="text-gray-400">Mailing address: 70 Wexford Pt</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -183,61 +368,31 @@
                 <p class="mb-2">The <a href="https://portal.assessor.lacounty.gov/parceldetail/2836038085" class="text-blue-400 hover:underline" target="_blank">LA County Assessor Portal</a> shows:</p>
                 <div class="bg-gray-800 rounded p-4 font-mono text-sm">
                     <div>AIN: 2836-038-085</div>
-                    <div>Address: 19853 COLLINS RD, SANTA CLARITA CA</div>
+                    <div>Address: 19853 COLLINS RD, SANTA CLARITA CA 91351-4837</div>
                     <div>Tax Status: CURRENT</div>
                     <div class="text-red-400 font-bold">Exemption: Homeowners'</div>
                 </div>
             </div>
 
             <div class="space-y-3 text-sm">
-                <p><strong class="text-red-400">The Problem:</strong> California's Homeowner's Exemption requires the property to be your <strong>principal place of residence</strong>. Filing is under penalty of perjury.</p>
+                <p><strong class="text-red-400">The Problem:</strong> California's <a href="https://boe.ca.gov/proptaxes/homeowners_exemption.htm" class="text-blue-400 hover:underline" target="_blank">Homeowner's Exemption</a> requires the property to be your <strong>principal place of residence</strong>. Filing is under penalty of perjury. You must be BOTH the owner AND the occupant.</p>
 
                 <p><strong class="text-red-400">The Evidence:</strong></p>
                 <ul class="list-disc ml-6 space-y-1">
                     <li>Both Byron AND Tasha registered to vote in North Carolina in <strong>April 2014</strong></li>
-                    <li>They bought this CA house in <strong>May 2017</strong> - 3 years AFTER moving to NC</li>
+                    <li>They bought this CA house in <strong>May 2017</strong> - 3 years AFTER becoming NC residents</li>
                     <li>Byron started an NC job in <strong>May 2017</strong> - same month as purchase</li>
-                    <li>They still own property in Hickory, NC (4657 Queens Rd - bought 2021)</li>
+                    <li>They owned multiple properties in NC (lake house, Queens Rd)</li>
+                    <li>The exemption only saves <strong>~$70/year</strong> - why risk it?</li>
                 </ul>
 
-                <p><strong class="text-yellow-400">Why This Matters:</strong> If they lied about living here for the tax exemption, they may have also lied on the mortgage application (owner-occupied vs investment property). A mortgage professional with FINRA licenses would know the difference.</p>
-            </div>
-        </section>
-
-        <!-- Current Seller Section -->
-        <section class="bg-gray-800 rounded-lg p-6 mb-8">
-            <h2 class="text-xl font-semibold text-blue-400 mb-4">Current Seller: Nick Manfredi</h2>
-
-            <div class="grid md:grid-cols-2 gap-6">
-                <div>
-                    <table class="w-full text-sm">
-                        <tr><td class="text-gray-400 py-1">DRE License:</td><td><a href="https://pplinfo2.dre.ca.gov/PPLInfo/PplInfoStart?LicenseID=01893754" class="text-blue-400 hover:underline" target="_blank">#01893754</a></td></tr>
-                        <tr><td class="text-gray-400 py-1">Brokerage:</td><td>Elevate Real Estate Agency</td></tr>
-                        <tr><td class="text-gray-400 py-1">Phone:</td><td class="text-blue-400">909-261-8744</td></tr>
-                        <tr><td class="text-gray-400 py-1">Business:</td><td><a href="https://as-is-housebuyers.com/" class="text-blue-400 hover:underline" target="_blank">As-Is House Buyers</a></td></tr>
-                        <tr><td class="text-gray-400 py-1">Business:</td><td><a href="https://www.themanfredigroup.com/" class="text-blue-400 hover:underline" target="_blank">The Manfredi Group</a></td></tr>
-                    </table>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-2">Flipper Math</h4>
-                    <table class="w-full text-sm">
-                        <tr><td class="text-gray-400">Bought for:</td><td>$553,000</td></tr>
-                        <tr><td class="text-gray-400">Renovation (est):</td><td>$30,000 - $50,000</td></tr>
-                        <tr><td class="text-gray-400">Selling for:</td><td>$760,000</td></tr>
-                        <tr class="border-t border-gray-600"><td class="text-green-400 font-bold pt-2">Profit:</td><td class="text-green-400 font-bold pt-2">$150,000 - $175,000</td></tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class="mt-4 p-4 bg-yellow-900/20 rounded">
-                <h4 class="font-semibold text-yellow-400 mb-2">AB-968 Flipper Disclosure Law</h4>
-                <p class="text-sm">Under <a href="https://tldlaw.com/disclosure-requirements-for-residential-flippers-understanding-ab-968/" class="text-blue-400 hover:underline" target="_blank">California Civil Code 1102.6h</a>, sellers who sell within 18 months of purchase must disclose:</p>
-                <ul class="text-sm list-disc ml-6 mt-2">
-                    <li>All work performed on the property</li>
-                    <li>Names of all contractors (for work over $500)</li>
-                    <li>Copies of all permits obtained</li>
+                <p><strong class="text-yellow-400">Why This Matters for Julia:</strong></p>
+                <ul class="list-disc ml-6 space-y-1">
+                    <li>If they lied about living here, they probably had <strong>tenants</strong></li>
+                    <li>Rental properties often have <strong>more wear and tear</strong></li>
+                    <li>Absentee landlords often <strong>defer maintenance</strong></li>
+                    <li>They may have also gotten an <strong>owner-occupied mortgage</strong> fraudulently (federal crime)</li>
                 </ul>
-                <p class="text-sm mt-2 text-yellow-400">No permits were found in LA County or City of Santa Clarita records.</p>
             </div>
         </section>
 
@@ -248,11 +403,11 @@
             <ol class="space-y-3 text-sm">
                 <li class="flex gap-3">
                     <span class="text-blue-400 font-bold">1.</span>
-                    <span>Request the <strong>preliminary title report</strong> - will show complete ownership chain and any liens</span>
+                    <span>Request the <strong>preliminary title report</strong> - will show complete ownership chain, any liens, and mortgage details</span>
                 </li>
                 <li class="flex gap-3">
                     <span class="text-blue-400 font-bold">2.</span>
-                    <span>Request <strong>AB-968 flipper disclosures</strong> - names of all contractors, receipts, permits</span>
+                    <span>Request <strong>AB-968 flipper disclosures</strong> - names of all contractors, receipts, permits (REQUIRED by law)</span>
                 </li>
                 <li class="flex gap-3">
                     <span class="text-blue-400 font-bold">3.</span>
@@ -260,15 +415,19 @@
                 </li>
                 <li class="flex gap-3">
                     <span class="text-blue-400 font-bold">4.</span>
-                    <span>Ask: <strong>Why was property sold for $553k</strong> when comps were $700k+?</span>
+                    <span>Ask: <strong>Why was property sold for $553k</strong> when comps were $700k+? Was it a wholesale/assignment deal?</span>
                 </li>
                 <li class="flex gap-3">
                     <span class="text-blue-400 font-bold">5.</span>
-                    <span>Request <strong>"before" photos</strong> from when flipper acquired property</span>
+                    <span>Request <strong>"before" photos</strong> from when flipper acquired property - what did they actually fix?</span>
                 </li>
                 <li class="flex gap-3">
                     <span class="text-blue-400 font-bold">6.</span>
-                    <span>Get <strong>fire insurance quotes</strong> - property has 36% wildfire risk over 30 years</span>
+                    <span>Get <strong>fire insurance quotes NOW</strong> - property has 36% wildfire risk over 30 years (may need FAIR Plan)</span>
+                </li>
+                <li class="flex gap-3">
+                    <span class="text-blue-400 font-bold">7.</span>
+                    <span>Ask neighbors: <strong>Who was living here 2017-2025?</strong> Tenants? Family? How was the property maintained?</span>
                 </li>
             </ol>
         </section>
@@ -284,18 +443,19 @@
                 <p class="text-sm italic text-gray-300">"Hi Byron, I'm buying the house at 19853 Collins Rd in Canyon Country. I'd love to hear about your experience with the property - any issues I should know about, how the HOA was, that kind of thing. Thanks!"</p>
 
                 <div class="mt-4 flex gap-4 text-sm">
-                    <a href="tel:6616448982" class="text-blue-400 hover:underline">Call: (661) 644-8982</a>
-                    <a href="https://www.linkedin.com/in/byron-dechellis-55789873" class="text-blue-400 hover:underline" target="_blank">LinkedIn Message</a>
+                    <a href="tel:6616448982" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">Call: (661) 644-8982</a>
+                    <a href="https://www.linkedin.com/in/byron-dechellis-55789873" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded" target="_blank">LinkedIn Message</a>
                 </div>
             </div>
 
             <div class="mt-4 p-4 bg-blue-900/20 rounded">
                 <h4 class="font-semibold text-blue-400 mb-2">Key Questions for Byron:</h4>
                 <ul class="text-sm list-disc ml-6 space-y-1">
-                    <li>Who was living in the house 2017-2025?</li>
-                    <li>Were there any major repairs or issues during your ownership?</li>
-                    <li>How was the HOA to deal with?</li>
-                    <li>Why did you sell to a "We Buy Houses" company instead of listing traditionally?</li>
+                    <li><strong>Who was living in the house 2017-2025?</strong> (tenants, family, vacant?)</li>
+                    <li>Were there any <strong>major repairs or issues</strong> during your ownership?</li>
+                    <li>How was the <strong>HOA</strong> to deal with?</li>
+                    <li>Why did you sell to a <strong>"We Buy Houses" company</strong> for $150k below market?</li>
+                    <li>What was the <strong>condition</strong> of the property when you sold?</li>
                 </ul>
             </div>
         </section>
@@ -312,17 +472,19 @@
                         <tr><td class="text-gray-400 py-1">APN:</td><td>2836-038-085</td></tr>
                         <tr><td class="text-gray-400 py-1">Year Built:</td><td>1986</td></tr>
                         <tr><td class="text-gray-400 py-1">Beds/Baths:</td><td>3 bed / 3 bath</td></tr>
-                        <tr><td class="text-gray-400 py-1">Sq Ft:</td><td>1,471 sq ft</td></tr>
+                        <tr><td class="text-gray-400 py-1">Sq Ft:</td><td>1,471 sq ft (public records)</td></tr>
                         <tr><td class="text-gray-400 py-1">Type:</td><td>Condominium / Planned Development</td></tr>
+                        <tr><td class="text-gray-400 py-1">Stories:</td><td>2</td></tr>
                     </table>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-2">HOA Info</h4>
                     <table class="w-full text-sm">
                         <tr><td class="text-gray-400 py-1">HOA Name:</td><td>American Beauty Classics 1</td></tr>
-                        <tr><td class="text-gray-400 py-1">HOA Fee:</td><td>$245/month</td></tr>
+                        <tr><td class="text-gray-400 py-1">HOA Fee:</td><td>$245/month (was $180 in 2017)</td></tr>
                         <tr><td class="text-gray-400 py-1">Management:</td><td>GM Management</td></tr>
                         <tr><td class="text-gray-400 py-1">Phone:</td><td>805-526-0303</td></tr>
+                        <tr><td class="text-gray-400 py-1">Mello-Roos:</td><td>NONE</td></tr>
                         <tr><td class="text-gray-400 py-1">Amenities:</td><td>4 pools, 3 tennis courts, playground</td></tr>
                     </table>
                 </div>
@@ -334,12 +496,12 @@
                     <div class="bg-red-900/30 rounded p-3 text-center">
                         <div class="text-red-400 font-bold">SEVERE</div>
                         <div>Fire Risk</div>
-                        <div class="text-xs text-gray-400">36% in 30 years</div>
+                        <div class="text-xs text-gray-400">36% chance in 30 years</div>
                     </div>
                     <div class="bg-red-900/30 rounded p-3 text-center">
                         <div class="text-red-400 font-bold">SEVERE</div>
                         <div>Heat Risk</div>
-                        <div class="text-xs text-gray-400">19 days >99F</div>
+                        <div class="text-xs text-gray-400">19 days >99°F in 30 yrs</div>
                     </div>
                     <div class="bg-yellow-900/30 rounded p-3 text-center">
                         <div class="text-yellow-400 font-bold">MAJOR</div>
@@ -363,7 +525,7 @@
                 <div>
                     <h4 class="font-semibold mb-2">Property Records</h4>
                     <ul class="space-y-1">
-                        <li><a href="https://portal.assessor.lacounty.gov/parceldetail/2836038085" class="text-blue-400 hover:underline" target="_blank">LA County Assessor Portal</a></li>
+                        <li><a href="https://portal.assessor.lacounty.gov/parceldetail/2836038085" class="text-blue-400 hover:underline" target="_blank">LA County Assessor Portal (AIN 2836-038-085)</a></li>
                         <li><a href="https://www.compass.com/homedetails/19853-Collins-Rd-Canyon-Country-CA-91351/25020636430679777_lid/" class="text-blue-400 hover:underline" target="_blank">Compass Listing</a></li>
                         <li><a href="https://www.redfin.com/CA/Canyon-Country/19853-Collins-Rd-91351/home/6014864" class="text-blue-400 hover:underline" target="_blank">Redfin Listing</a></li>
                     </ul>
@@ -373,30 +535,37 @@
                     <ul class="space-y-1">
                         <li><a href="https://gis.catawbacountync.gov/nomap/" class="text-blue-400 hover:underline" target="_blank">Catawba County GIS</a> - Search "Dechellis"</li>
                         <li>4657 Queens Rd - Byron & Tasha's current property</li>
-                        <li>4461 1st St NW - Sold May 2024 for $1.35M</li>
+                        <li>4461 1st St NW - Lake house sold May 2024 for $1.35M</li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-2">Seller/Flipper</h4>
                     <ul class="space-y-1">
-                        <li><a href="https://pplinfo2.dre.ca.gov/PPLInfo/PplInfoStart?LicenseID=01893754" class="text-blue-400 hover:underline" target="_blank">Nick Manfredi DRE License</a></li>
-                        <li><a href="https://as-is-housebuyers.com/" class="text-blue-400 hover:underline" target="_blank">As-Is House Buyers</a></li>
+                        <li><a href="https://pplinfo2.dre.ca.gov/PPLInfo/PplInfoStart?LicenseID=01893754" class="text-blue-400 hover:underline" target="_blank">Nick Manfredi DRE License #01893754</a></li>
+                        <li><a href="https://as-is-housebuyers.com/our-team/" class="text-blue-400 hover:underline" target="_blank">As-Is House Buyers Team</a></li>
                         <li><a href="https://www.themanfredigroup.com/" class="text-blue-400 hover:underline" target="_blank">The Manfredi Group</a></li>
+                        <li><a href="https://www.linkedin.com/in/nick-manfredi-95bb575/" class="text-blue-400 hover:underline" target="_blank">Nick Manfredi LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-2">Previous Owners</h4>
+                    <ul class="space-y-1">
+                        <li><a href="https://www.linkedin.com/in/byron-dechellis-55789873" class="text-blue-400 hover:underline" target="_blank">Byron Dechellis LinkedIn</a></li>
+                        <li><a href="https://www.gracechurch.org/Leader/DeChellis/Byron" class="text-blue-400 hover:underline" target="_blank">Byron's Grace Church sermons (2008-2009)</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-2">Family Background</h4>
                     <ul class="space-y-1">
-                        <li><a href="https://www.theunion.com/news/obituaries/obituary-of-tiana-jacqueline-trumbo/" class="text-blue-400 hover:underline" target="_blank">Tiana Trumbo Obituary</a></li>
-                        <li><a href="https://www.theunion.com/news/local-news/a-life-of-accomplishments-nevada-city-s-bill-trumbo-looks-back-at-his-life/" class="text-blue-400 hover:underline" target="_blank">Bill Trumbo Article</a></li>
-                        <li><a href="https://www.linkedin.com/in/byron-dechellis-55789873" class="text-blue-400 hover:underline" target="_blank">Byron's LinkedIn</a></li>
+                        <li><a href="https://www.theunion.com/news/obituaries/obituary-of-tiana-jacqueline-trumbo/" class="text-blue-400 hover:underline" target="_blank">Tiana Trumbo Obituary (Aug 2017)</a></li>
+                        <li><a href="https://www.theunion.com/news/local-news/a-life-of-accomplishments-nevada-city-s-bill-trumbo-looks-back-at-his-life/" class="text-blue-400 hover:underline" target="_blank">Bill Trumbo Profile (Tasha's father)</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-2">Legal References</h4>
                     <ul class="space-y-1">
-                        <li><a href="https://boe.ca.gov/proptaxes/homeowners_exemption.htm" class="text-blue-400 hover:underline" target="_blank">CA Homeowner's Exemption</a></li>
-                        <li><a href="https://tldlaw.com/disclosure-requirements-for-residential-flippers-understanding-ab-968/" class="text-blue-400 hover:underline" target="_blank">AB-968 Flipper Law</a></li>
+                        <li><a href="https://boe.ca.gov/proptaxes/homeowners_exemption.htm" class="text-blue-400 hover:underline" target="_blank">CA Homeowner's Exemption (BOE)</a></li>
+                        <li><a href="https://tldlaw.com/disclosure-requirements-for-residential-flippers-understanding-ab-968/" class="text-blue-400 hover:underline" target="_blank">AB-968 Flipper Disclosure Law</a></li>
                     </ul>
                 </div>
             </div>
