@@ -33,6 +33,36 @@
             <p class="text-yellow-400 mt-2 text-sm">This page contains due diligence research on the property and its previous owners.</p>
         </header>
 
+        <!-- TL;DR Box -->
+        <section class="bg-gradient-to-r from-blue-900/50 to-purple-900/50 border-2 border-blue-500 rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-white mb-4">TL;DR - The Bottom Line</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-green-400 mb-2">The Good</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>$760k is fair market value (Redfin estimate: $768k)</li>
+                        <li>Nice HOA amenities (4 pools, tennis courts)</li>
+                        <li>Good schools nearby (Golden Valley High 8/10)</li>
+                        <li>No Mello-Roos (saves $3-5k/year)</li>
+                        <li>Professional flipper = likely quality cosmetic work</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-red-400 mb-2">The Concerns</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>8 years as rental = unknown wear/tear</li>
+                        <li>33-day flip = rushed, cosmetic only</li>
+                        <li>ZERO permits = nothing structural verified</li>
+                        <li>SEVERE fire risk (36% in 30 years)</li>
+                        <li>Previous owners committed tax fraud</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4 p-3 bg-yellow-900/30 rounded border border-yellow-600">
+                <p class="text-yellow-400 font-semibold">Recommendation: Proceed cautiously. Get thorough inspection, request AB-968 disclosures, get fire insurance quotes BEFORE removing contingencies.</p>
+            </div>
+        </section>
+
         <!-- Quick Summary -->
         <section class="bg-gray-800 rounded-lg p-6 mb-8 border-l-4 border-yellow-500">
             <h2 class="text-xl font-semibold text-yellow-400 mb-4">Quick Summary</h2>
@@ -244,6 +274,47 @@
                 </ul>
                 <p class="text-sm mt-2 text-yellow-400"><strong>Request these disclosures!</strong> If they can't provide them, you may have grounds for rescission.</p>
             </div>
+
+            <div class="mt-6 bg-yellow-900/20 border border-yellow-600 rounded p-4">
+                <h4 class="font-semibold text-yellow-400 mb-3">Renovation Claims vs. Reality</h4>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-gray-600">
+                            <th class="text-left py-2 text-gray-400">What Listing Claims</th>
+                            <th class="text-left py-2 text-gray-400">Permits Found</th>
+                            <th class="text-left py-2 text-gray-400">Concern</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">New interior paint</td>
+                            <td class="text-green-400">N/A (no permit needed)</td>
+                            <td class="text-gray-400">Could be covering issues</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">New exterior paint</td>
+                            <td class="text-green-400">N/A (no permit needed)</td>
+                            <td class="text-gray-400">Could be covering issues</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">New flooring (hardwood)</td>
+                            <td class="text-green-400">N/A (no permit needed)</td>
+                            <td class="text-yellow-400">Check quality of install</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">New lighting</td>
+                            <td class="text-red-400">NONE</td>
+                            <td class="text-red-400">Electrical work may need permit</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">New 4.5" baseboards</td>
+                            <td class="text-green-400">N/A (no permit needed)</td>
+                            <td class="text-gray-400">Cosmetic only</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="mt-3 text-sm text-yellow-400"><strong>Key concern:</strong> "New lighting" could mean just swapping fixtures (no permit needed) or rewiring (permit required). Ask seller to clarify scope.</p>
+            </div>
         </section>
 
         <!-- Previous Owners Section -->
@@ -396,40 +467,336 @@
             </div>
         </section>
 
+        <!-- Comparable Sales -->
+        <section class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">Comparable Sales - Is $760k Fair?</h2>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-gray-600">
+                            <th class="text-left py-2 text-gray-400">Address</th>
+                            <th class="text-left py-2 text-gray-400">Price</th>
+                            <th class="text-left py-2 text-gray-400">Beds/Baths</th>
+                            <th class="text-left py-2 text-gray-400">Sq Ft</th>
+                            <th class="text-left py-2 text-gray-400">$/Sq Ft</th>
+                            <th class="text-left py-2 text-gray-400">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-600 bg-blue-900/20">
+                            <td class="py-2 font-semibold">19853 Collins Rd (Julia's)</td>
+                            <td>$760,000</td>
+                            <td>3 / 3</td>
+                            <td>1,471</td>
+                            <td class="text-yellow-400">$517</td>
+                            <td>Jan 2026</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">19752 Collins Rd (same street)</td>
+                            <td>$820,000</td>
+                            <td>4 / 3</td>
+                            <td>2,349</td>
+                            <td class="text-green-400">$349</td>
+                            <td>Dec 2025</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">19867 Emmett Rd</td>
+                            <td>$750,000</td>
+                            <td>4 / 2.5</td>
+                            <td>1,700</td>
+                            <td class="text-green-400">$441</td>
+                            <td>Jul 2025</td>
+                        </tr>
+                        <tr class="border-b border-gray-600">
+                            <td class="py-2">26504 Snowbird Pl</td>
+                            <td>$815,000</td>
+                            <td>3 / 2.5</td>
+                            <td>1,669</td>
+                            <td class="text-yellow-400">$488</td>
+                            <td>Mar 2025</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">26938 Terri Dr</td>
+                            <td>$642,000</td>
+                            <td>3 / 2</td>
+                            <td>1,172</td>
+                            <td class="text-yellow-400">$548</td>
+                            <td>Dec 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-4 grid md:grid-cols-3 gap-4">
+                <div class="bg-gray-700 rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-blue-400">$768,181</div>
+                    <div class="text-sm text-gray-400">Redfin Estimate</div>
+                </div>
+                <div class="bg-gray-700 rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-green-400">$760,000</div>
+                    <div class="text-sm text-gray-400">Julia's Offer</div>
+                </div>
+                <div class="bg-gray-700 rounded p-3 text-center">
+                    <div class="text-2xl font-bold text-yellow-400">$517/sqft</div>
+                    <div class="text-sm text-gray-400">Price per Sq Ft</div>
+                </div>
+            </div>
+            <p class="mt-3 text-sm text-gray-400"><strong>Assessment:</strong> $760k is slightly below Redfin estimate but on the high end for $/sq ft. Fair price if work quality is good.</p>
+        </section>
+
+        <!-- Action Checklist -->
+        <section class="bg-gradient-to-r from-green-900/30 to-blue-900/30 border border-green-500 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-green-400 mb-4">Action Checklist (Print This!)</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold mb-3 text-blue-400">Before Removing Contingencies</h3>
+                    <div class="space-y-2 text-sm">
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Get preliminary title report from escrow</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Request AB-968 flipper disclosures (contractor names, receipts, permits)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Get Transfer Disclosure Statement (TDS)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Get Seller Property Questionnaire (SPQ)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Get Natural Hazard Disclosure (NHD) report</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span><strong class="text-red-400">Get fire insurance quotes</strong> (may need FAIR Plan)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Schedule home inspection</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Request "before" photos from seller</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3 text-yellow-400">Tell Your Inspector to Check</h3>
+                    <div class="space-y-2 text-sm">
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Quality of new flooring install (underlayment, transitions, warping)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Paint job quality (look for cover-ups, water stains, cracks)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Signs of water damage (roof, windows, bathrooms)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>HVAC age and condition (rental = heavy use)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Plumbing (8 years of tenants = wear)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Electrical panel age (house built 1986)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Roof condition (any patches, age)</span>
+                        </label>
+                        <label class="flex items-start gap-2">
+                            <input type="checkbox" class="mt-1">
+                            <span>Foundation/structural issues (settling, cracks)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h3 class="font-semibold mb-3 text-purple-400">Optional But Recommended</h3>
+                <div class="grid md:grid-cols-2 gap-2 text-sm">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="mt-1">
+                        <span>Contact Byron Dechellis - ask who lived there 2017-2025</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="mt-1">
+                        <span>Talk to neighbors about property history</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="mt-1">
+                        <span>Request HOA meeting minutes (any property complaints?)</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="mt-1">
+                        <span>Get sewer scope inspection ($150-300)</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fire Insurance Warning -->
+        <section class="bg-red-900/30 border border-red-500 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-red-400 mb-4">Fire Insurance - Critical Issue</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="font-semibold mb-2">The Risk</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><strong class="text-red-400">36% chance</strong> of wildfire affecting property in next 30 years</li>
+                        <li>Located in Santa Clarita - high fire risk zone</li>
+                        <li>Many insurers have <strong>stopped writing policies</strong> in CA fire zones</li>
+                        <li>You may need <strong>FAIR Plan</strong> (state's insurer of last resort)</li>
+                        <li>FAIR Plan is <strong>expensive</strong> ($3,000-$10,000+/year)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-2">What To Do</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><strong class="text-yellow-400">Get quotes NOW</strong> - before removing contingencies</li>
+                        <li>Try: State Farm, Farmers, Allstate, USAA first</li>
+                        <li>If denied, contact a <strong>broker</strong> who can shop multiple carriers</li>
+                        <li>Last resort: <strong>FAIR Plan</strong> (cfpnet.com)</li>
+                        <li>Factor insurance cost into your monthly budget</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-4 bg-gray-800 rounded p-4 text-sm">
+                <h4 class="font-semibold text-yellow-400 mb-2">Estimated Monthly Costs with Fire Insurance</h4>
+                <table class="w-full">
+                    <tr><td class="text-gray-400">Mortgage (assuming 20% down):</td><td>~$4,000/mo</td></tr>
+                    <tr><td class="text-gray-400">Property Tax:</td><td>~$800/mo</td></tr>
+                    <tr><td class="text-gray-400">HOA:</td><td>$245/mo</td></tr>
+                    <tr><td class="text-gray-400">Standard Insurance:</td><td>~$200-300/mo</td></tr>
+                    <tr><td class="text-gray-400 text-red-400">FAIR Plan (if needed):</td><td class="text-red-400">$400-800/mo</td></tr>
+                    <tr class="border-t border-gray-600"><td class="pt-2 font-bold">Total (standard):</td><td class="pt-2 font-bold">~$5,245-$5,345/mo</td></tr>
+                    <tr><td class="font-bold text-red-400">Total (FAIR Plan):</td><td class="font-bold text-red-400">~$5,445-$5,845/mo</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Full Email Template -->
+        <section class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">Email Template - Send to Your Agent</h2>
+
+            <div class="bg-gray-900 rounded p-4 text-sm font-mono overflow-x-auto">
+                <p class="text-gray-400 mb-2">Subject: Due Diligence Questions - 19853 Collins Rd</p>
+                <hr class="border-gray-700 my-3">
+                <p>Hi [Agent Name],</p>
+                <br>
+                <p>My offer on 19853 Collins Rd has been accepted, and I'm conducting due diligence. Please provide:</p>
+                <br>
+                <p><strong>Required Documents:</strong></p>
+                <ol class="list-decimal ml-6 space-y-1">
+                    <li>Preliminary title report</li>
+                    <li>Transfer Disclosure Statement (TDS)</li>
+                    <li>Seller Property Questionnaire (SPQ)</li>
+                    <li>Natural Hazard Disclosure (NHD)</li>
+                    <li><strong>AB-968 Flipper Disclosures</strong> (contractor names, receipts, permits)</li>
+                </ol>
+                <br>
+                <p><strong>Questions:</strong></p>
+                <ol class="list-decimal ml-6 space-y-1">
+                    <li>Who is the current seller (individual, LLC, trust)?</li>
+                    <li>Is Nick Manfredi the owner or affiliated with owner?</li>
+                    <li>Why was property sold for $553k in Sept 2025 when comps were $700k+?</li>
+                    <li>What work was done? Total renovation cost?</li>
+                    <li>Why were no permits pulled for any work?</li>
+                    <li>Do you have "before" photos from Sept 2025?</li>
+                    <li>Who performed the work? License numbers?</li>
+                    <li>Has the seller obtained fire insurance quotes?</li>
+                </ol>
+                <br>
+                <p>Under AB-968 (CA Civil Code § 1102.6h), sellers who sell within 18 months of acquiring must disclose all work performed and contractor information. Please provide these required disclosures.</p>
+                <br>
+                <p>Best regards,<br>Julia</p>
+            </div>
+
+            <button onclick="navigator.clipboard.writeText(document.querySelector('.font-mono').innerText)" class="mt-4 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm">
+                Copy Email Text
+            </button>
+        </section>
+
         <!-- Questions to Ask -->
         <section class="bg-gray-800 rounded-lg p-6 mb-8">
-            <h2 class="text-xl font-semibold text-blue-400 mb-4">Questions for Your Agent</h2>
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">All Questions for Your Agent (Detailed)</h2>
 
-            <ol class="space-y-3 text-sm">
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">1.</span>
-                    <span>Request the <strong>preliminary title report</strong> - will show complete ownership chain, any liens, and mortgage details</span>
-                </li>
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">2.</span>
-                    <span>Request <strong>AB-968 flipper disclosures</strong> - names of all contractors, receipts, permits (REQUIRED by law)</span>
-                </li>
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">3.</span>
-                    <span>Ask: <strong>Who is the actual seller?</strong> Is it Nick Manfredi personally, an LLC, or another entity?</span>
-                </li>
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">4.</span>
-                    <span>Ask: <strong>Why was property sold for $553k</strong> when comps were $700k+? Was it a wholesale/assignment deal?</span>
-                </li>
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">5.</span>
-                    <span>Request <strong>"before" photos</strong> from when flipper acquired property - what did they actually fix?</span>
-                </li>
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">6.</span>
-                    <span>Get <strong>fire insurance quotes NOW</strong> - property has 36% wildfire risk over 30 years (may need FAIR Plan)</span>
-                </li>
-                <li class="flex gap-3">
-                    <span class="text-blue-400 font-bold">7.</span>
-                    <span>Ask neighbors: <strong>Who was living here 2017-2025?</strong> Tenants? Family? How was the property maintained?</span>
-                </li>
-            </ol>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <h3 class="font-semibold text-yellow-400 mb-2">Property History & Chain of Title</h3>
+                    <ol class="list-decimal ml-6 space-y-1">
+                        <li>Who sold the property in September 2025, and what type of sale was it? (Standard, foreclosure, short sale, estate, or off-market?)</li>
+                        <li>Provide the preliminary title report showing complete chain of ownership</li>
+                        <li>Why was property sold for $553k when comps were $700k+? Financial distress?</li>
+                        <li>Was there an assignment contract or wholesale agreement?</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-yellow-400 mb-2">Current Seller Information</h3>
+                    <ol class="list-decimal ml-6 space-y-1" start="5">
+                        <li>Who is the current seller? Individual, LLC, trust, or other entity?</li>
+                        <li>How long has seller owned property? (~4 months per public records)</li>
+                        <li>Is Nick Manfredi or The Manfredi Group the owner or affiliated with owner?</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-yellow-400 mb-2">AB-968 Flipper Disclosures (REQUIRED BY LAW)</h3>
+                    <ol class="list-decimal ml-6 space-y-1" start="8">
+                        <li>Provide complete list of all work performed (additions, modifications, repairs)</li>
+                        <li>Names and contact info for ALL contractors (work over $500)</li>
+                        <li>Copies of ALL permits obtained</li>
+                        <li>If no permits, confirm in writing and explain why</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-yellow-400 mb-2">Renovation Details</h3>
+                    <ol class="list-decimal ml-6 space-y-1" start="12">
+                        <li>What was property condition when seller acquired it in Sept 2025?</li>
+                        <li>Are there "before" photos?</li>
+                        <li>Provide receipts, invoices, contracts for all work</li>
+                        <li>Total dollar amount spent on renovations?</li>
+                        <li>Were contractors licensed? Provide license numbers</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-yellow-400 mb-2">Standard Disclosures</h3>
+                    <ol class="list-decimal ml-6 space-y-1" start="17">
+                        <li>Provide Transfer Disclosure Statement (TDS)</li>
+                        <li>Provide Seller Property Questionnaire (SPQ)</li>
+                        <li>Provide Natural Hazard Disclosure (NHD)</li>
+                        <li>Has anyone died on property in past 3 years?</li>
+                        <li>Any known material defects not yet disclosed?</li>
+                        <li>Any insurance claims filed in past 5 years?</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-yellow-400 mb-2">Fire Insurance</h3>
+                    <ol class="list-decimal ml-6 space-y-1" start="23">
+                        <li>Has seller obtained fire insurance quotes?</li>
+                        <li>Is property insurable through standard carriers or requires FAIR Plan?</li>
+                    </ol>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Previous Owners -->
@@ -571,10 +938,43 @@
             </div>
         </section>
 
+        <!-- Key Phone Numbers -->
+        <section class="bg-gray-800 rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-blue-400 mb-4">Key Phone Numbers</h2>
+
+            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="font-semibold">Nick Manfredi (Seller/Agent)</div>
+                    <a href="tel:9494247701" class="text-blue-400">(949) 424-7701</a>
+                </div>
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="font-semibold">Byron Dechellis (Prev Owner)</div>
+                    <a href="tel:6616448982" class="text-blue-400">(661) 644-8982</a>
+                </div>
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="font-semibold">GM Management (HOA)</div>
+                    <a href="tel:8055260303" class="text-blue-400">(805) 526-0303</a>
+                </div>
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="font-semibold">FAIR Plan (Fire Insurance)</div>
+                    <a href="tel:8006531883" class="text-blue-400">(800) 653-1883</a>
+                </div>
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="font-semibold">LA County Assessor</div>
+                    <a href="tel:2138934913" class="text-blue-400">(213) 893-4913</a>
+                </div>
+                <div class="bg-gray-700 rounded p-3">
+                    <div class="font-semibold">Santa Clarita Building</div>
+                    <a href="tel:6612594111" class="text-blue-400">(661) 259-4111</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
-        <footer class="text-center text-gray-500 text-sm py-8">
-            <p>Research compiled January 16, 2026</p>
+        <footer class="text-center text-gray-500 text-sm py-8 border-t border-gray-700">
+            <p>Research compiled January 16, 2026 by Eugene</p>
             <p class="mt-2">This is for informational purposes only. Consult with your real estate agent and attorney before making decisions.</p>
+            <p class="mt-4 text-xs">Questions? Contact Eugene</p>
         </footer>
     </div>
 </body>
