@@ -232,38 +232,63 @@
             <p class="text-xs text-red-300 mt-4"><strong>Negotiation leverage:</strong> Seller claims NO defects but inspection found significant issues. This is documented evidence for requesting repair credits.</p>
         </section>
 
+        <!-- MAJOR: Square Footage Price Discrepancy -->
+        <section class="bg-red-900/40 border-4 border-red-500 rounded-lg p-6 mb-8 shadow-lg shadow-red-500/20">
+            <div class="text-center mb-6">
+                <h2 class="text-3xl font-bold text-red-400 mb-2">&#128680; MAJOR: Square Footage Discrepancy &#128680;</h2>
+                <p class="text-gray-300">The home may be significantly smaller than advertised</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4 mb-6">
+                <div class="bg-gray-800 p-4 rounded text-center">
+                    <p class="text-sm text-gray-400 mb-1">MLS Listing Says</p>
+                    <p class="text-3xl font-bold text-white">1,700 sq ft</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded text-center">
+                    <p class="text-sm text-gray-400 mb-1">LA County Records Say</p>
+                    <p class="text-3xl font-bold text-yellow-400">1,471 sq ft</p>
+                </div>
+                <div class="bg-red-800 p-4 rounded text-center">
+                    <p class="text-sm text-red-300 mb-1">Difference</p>
+                    <p class="text-3xl font-bold text-red-400">229 sq ft</p>
+                    <p class="text-sm text-red-300">(14% smaller!)</p>
+                </div>
+            </div>
+
+            <div class="bg-black/50 border-2 border-red-400 rounded-lg p-6 text-center">
+                <p class="text-lg text-gray-300 mb-2">If County Records Are Correct:</p>
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <p class="text-sm text-gray-400">Price per sq ft (at MLS size)</p>
+                        <p class="text-2xl font-bold text-white">$447/sq ft</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-400">Fair price at actual size</p>
+                        <p class="text-2xl font-bold text-green-400">$657,600</p>
+                    </div>
+                </div>
+                <div class="border-t-2 border-red-500 pt-4">
+                    <p class="text-xl text-red-300 mb-1">POTENTIAL PRICE REDUCTION</p>
+                    <p class="text-5xl font-black text-red-400">~$102,000</p>
+                    <p class="text-sm text-gray-400 mt-2">This is SEPARATE from the $12-17k repair credits below</p>
+                </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-yellow-900/30 border border-yellow-500 rounded">
+                <p class="text-sm text-yellow-300"><strong>&#9888; Action Required:</strong> Verify the actual square footage. If 1,471 is correct, this is MAJOR negotiation leverage - you're being charged for 229 sq ft that doesn't exist.</p>
+            </div>
+        </section>
+
         <!-- Additional Red Flags -->
         <section class="bg-yellow-900/20 border border-yellow-500 rounded-lg p-6 mb-8">
-            <h2 class="text-xl font-semibold text-yellow-400 mb-4">&#9888; Additional Flags to Investigate</h2>
+            <h2 class="text-xl font-semibold text-yellow-400 mb-4">&#9888; Additional Flag to Investigate</h2>
 
-            <div class="grid md:grid-cols-2 gap-4">
-                <!-- Insurance Claim -->
-                <div class="bg-gray-800/50 p-4 rounded">
-                    <h3 class="font-semibold text-yellow-400 mb-2">Insurance Claim in Past 5 Years</h3>
-                    <p class="text-sm text-gray-300 mb-2"><strong>SPQ 1.G:</strong> Seller answered <span class="text-yellow-400 font-bold">YES</span></p>
-                    <p class="text-xs text-gray-400">There was an insurance claim filed on this property within the last 5 years. We don't know what it was for - could be minor (broken window) or major (water damage, fire, etc.).</p>
-                    <p class="text-xs text-red-300 mt-2"><strong>Action:</strong> Ask seller/agent what the claim was for and request documentation.</p>
-                </div>
-
-                <!-- Square Footage -->
-                <div class="bg-gray-800/50 p-4 rounded">
-                    <h3 class="font-semibold text-yellow-400 mb-2">Square Footage Discrepancy</h3>
-                    <p class="text-sm text-gray-300 mb-2"><strong>MLS Listing:</strong> 1,700 sq ft</p>
-                    <p class="text-sm text-gray-300 mb-2"><strong>LA County Records:</strong> 1,471 sq ft</p>
-                    <p class="text-sm text-red-400 font-bold">Difference: 229 sq ft (14% smaller than listed!)</p>
-
-                    <div class="mt-3 p-3 bg-red-900/30 rounded border border-red-600">
-                        <p class="text-sm text-gray-300 mb-2"><strong>Price Impact Calculation:</strong></p>
-                        <ul class="text-xs text-gray-400 space-y-1">
-                            <li>At $760k for 1,700 sq ft = <strong>$447/sq ft</strong></li>
-                            <li>At $447/sq ft for actual 1,471 sq ft = <strong>$657,600</strong></li>
-                        </ul>
-                        <p class="text-sm text-red-400 font-bold mt-2">Potential price reduction: ~$102,000</p>
-                        <p class="text-xs text-gray-400 mt-1">If the county's 1,471 sq ft is accurate, the home is overpriced by ~$100k based on square footage alone.</p>
-                    </div>
-
-                    <p class="text-xs text-red-300 mt-3"><strong>Action:</strong> Verify actual square footage. This is separate from repair credits - could be major negotiation leverage.</p>
-                </div>
+            <!-- Insurance Claim -->
+            <div class="bg-gray-800/50 p-4 rounded">
+                <h3 class="font-semibold text-yellow-400 mb-2">Insurance Claim in Past 5 Years</h3>
+                <p class="text-sm text-gray-300 mb-2"><strong>SPQ 1.G:</strong> Seller answered <span class="text-yellow-400 font-bold">YES</span></p>
+                <p class="text-xs text-gray-400">There was an insurance claim filed on this property within the last 5 years. We don't know what it was for - could be minor (broken window) or major (water damage, fire, etc.).</p>
+                <p class="text-xs text-red-300 mt-2"><strong>Action:</strong> Ask seller/agent what the claim was for and request documentation.</p>
             </div>
         </section>
 
